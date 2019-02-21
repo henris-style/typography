@@ -1,6 +1,6 @@
 {
   "name": "@henris/typography",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Grid module for Henri's",
   "main": "index.scss",
   "scripts": {
@@ -12,8 +12,8 @@
     "build:node-sass": "node-sass index.local.scss dist/node-sass/index.css",
     "build:settings": "node node_modules/@henris/build/scripts/json-to-css.js",
     "build:dist": "npm run stylelint:fix && npm run build",
-		"stylelint": "stylelint 'src/scss/**/*.scss'",
-		"stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
+    "stylelint": "stylelint 'src/scss/**/*.scss'",
+    "stylelint:fix": "stylelint 'src/scss/**/*.scss' --fix",
     "prepublishOnly": "npm run build:dist"
   },
   "repository": {
