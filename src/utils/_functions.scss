@@ -1,0 +1,9 @@
+@function list-contains($list, $string) {
+	$pass: false;
+	@each $item in $list {
+		@if $item == $string {
+			$pass: true;
+		}
+	}
+	@return $pass;
+}

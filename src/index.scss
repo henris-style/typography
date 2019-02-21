@@ -1,1 +1,22 @@
+$base-prefix: '' !default;
+$base-font-path: '/fonts' !default;
+// Import the settings
+@import 'settings/index';
+
 // Typography
+@import 'utils/weights';
+@import 'utils/convert';
+@import 'utils/functions';
+@import 'load/load';
+@import 'load/usage';
+@import 'style/base';
+@import 'style/default';
+@import 'style/headings';
+@import 'style/content';
+@import 'style/margins';
+
+// Load all fonts
+@include font-load($font-primary);
+@include font-load($font-secondary);
+@include font-load($font-tertiary);
+@include font-load($font-quaternary);
