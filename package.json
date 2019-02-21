@@ -42,7 +42,8 @@
     "stylelint-order": "^2.0.0"
   },
   "dependencies": {
-    "@henris/grid": "0.0.4",
-    "@henris/output": "0.0.3"
+    "@henris/grid": "0.0.5",
+    "@henris/output": "0.0.3",
+    "@henris/utils": "0.0.5"
   }
 }
