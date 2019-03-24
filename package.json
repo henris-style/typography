@@ -7,7 +7,7 @@
     "test": "npm run test:sass && npm run test:node-sass",
     "test:sass": "sass test/index.scss dist/test/sass/index.css",
     "test:node-sass": "node-sass test/index.scss dist/test/node-sass/index.css",
-    "build": "npm run build:sass && npm run build:node-sass",
+    "build": "npm run build:settings && npm run build:sass && npm run build:node-sass",
     "build:sass": "sass index.local.scss dist/sass/index.css",
     "build:node-sass": "node-sass index.local.scss dist/node-sass/index.css",
     "build:settings": "node node_modules/@henris/build/scripts/json-to-css.js",
@@ -33,17 +33,17 @@
   },
   "homepage": "https://github.com/henris-style/typography#readme",
   "devDependencies": {
-    "@henris/build": "^0.0.2",
+    "@henris/build": "^0.0.3",
     "node-sass": "^4.11.0",
-    "sass": "^1.17.0",
-    "ssst": "0.0.3",
+    "sass": "^1.17.1",
+    "ssst": "0.0.4",
     "stylelint": "^9.10.1",
     "stylelint-logical-order": "0.0.4",
     "stylelint-order": "^2.0.0"
   },
   "dependencies": {
     "@henris/grid": "0.0.5",
-    "@henris/output": "0.0.3",
+    "@henris/output": "0.0.4",
     "@henris/utils": "0.0.5"
   }
 }
