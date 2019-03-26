@@ -33,16 +33,16 @@
   "homepage": "https://github.com/henris-style/typography#readme",
   "devDependencies": {
     "node-sass": "^4.11.0",
-    "sass": "^1.17.1",
+    "sass": "^1.17.3",
     "ssst": "0.0.4",
     "stylelint": "^9.10.1",
-    "stylelint-logical-order": "0.0.4",
-    "stylelint-order": "^2.0.0"
+    "stylelint-logical-order": "0.0.5",
+    "stylelint-order": "^2.1.0"
   },
   "dependencies": {
     "@henris/default": "0.0.1",
-    "@henris/grid": "0.0.5",
-    "@henris/output": "0.0.4",
-    "@henris/utils": "0.0.5"
+    "@henris/grid": "0.0.6",
+    "@henris/output": "0.0.6",
+    "@henris/utils": "0.0.8"
   }
 }

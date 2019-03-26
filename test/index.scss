@@ -1,2 +1,19 @@
 @import "../node_modules/ssst/index.scss";
-@debug 'Tests yet to be made';
+@import "../index.local";
+
+
+
+// Test google font
+
+@include test(
+	'get-google-font() function',
+	'Return the import url to import fonts from Google'
+) {
+	@include is-equal(get-google-font('Noto Serif'),'https://fonts.googleapis.com/css?family=Noto+Serif');
+}
+@include test(
+	'get-google-font() function',
+	'Return the import url to import fonts from Google with weights'
+) {
+	@include is-equal(get-google-font('Noto Serif',500 600 700),'https://fonts.googleapis.com/css?family=Noto+Serif:500,600,700');
+}
