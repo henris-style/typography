@@ -34,7 +34,7 @@
   "devDependencies": {
     "node-sass": "^4.11.0",
     "sass": "^1.17.3",
-    "ssst": "0.0.4",
+    "ssst": "0.0.7",
     "stylelint": "^9.10.1",
     "stylelint-logical-order": "0.0.5",
     "stylelint-order": "^2.1.0"
