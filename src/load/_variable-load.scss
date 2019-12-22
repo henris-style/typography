@@ -14,7 +14,6 @@
 
 // Check the font and load them.
 @mixin font-variable-load($font) {
-	@debug $font;
 	//
 	// Define scoped variables
 	$load: false;
