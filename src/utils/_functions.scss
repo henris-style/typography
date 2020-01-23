@@ -41,14 +41,11 @@
 		}
 	} @else {
 		@if type-of($font-primary) !=
-			"map"
-			and
+			"map" and
 			type-of($font-secondary) !=
-			"map"
-			and
+			"map" and
 			type-of($font-tertiary) !=
-			"map"
-			and
+			"map" and
 			type-of($font-quaternary) !=
 			"map"
 		{
@@ -95,14 +92,11 @@
 		}
 	} @else {
 		@if type-of($font-primary) !=
-			"map"
-			and
+			"map" and
 			type-of($font-secondary) !=
-			"map"
-			and
+			"map" and
 			type-of($font-tertiary) !=
-			"map"
-			and
+			"map" and
 			type-of($font-quaternary) !=
 			"map"
 		{
@@ -135,4 +129,8 @@
 	} @else {
 		@return $weights;
 	}
+}
+
+@function letter-spacing($val) {
+	@return $val / 1000 * 1em;
 }
