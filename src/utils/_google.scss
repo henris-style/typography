@@ -1,4 +1,4 @@
-@function get-google-font($font-name, $font-weights: null, $languages: null) {
+@function get-google-font($font-name, $font-weights: null, $languages: null, $text: null) {
 	// Create the link
 	$google-url: 'https://fonts.googleapis.com/css?family=';
 	$embed-url: '#{$google-url}#{str-replace($font-name, ' ', '+')}';
@@ -16,11 +16,15 @@
 	@if $languages {
 		$embed-url: $embed-url + '&subset=' + $languages;
 	}
+	// Load only the given character range
+	@if $text {
+		$embed-url: $embed-url + '&text=' + $text
+	}
 
 	@return $embed-url;
 }
 
 // The mixin to import directly.
-@mixin import-google-font($font-name, $font-weights: null, $languages: null) {
-	@import url(get-google-font($font-name, $font-weights, $languages));
+@mixin import-google-font($font-name, $font-weights: null, $languages: null, $text: null) {
+	@import url(get-google-font($font-name, $font-weights, $languages, $text));
 }
