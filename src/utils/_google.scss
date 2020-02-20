@@ -18,7 +18,7 @@
 	}
 	// Load only the given character range
 	@if $text {
-		$embed-url: $embed-url + '&text=' + $text
+		$embed-url: $embed-url + '&text=' + $text;
 	}
 
 	@return $embed-url;
