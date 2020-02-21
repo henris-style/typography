@@ -18,7 +18,18 @@
 ) {
 	@include is-equal(
 		get-google-font("Noto Serif", 500 600 700),
-		"https://fonts.googleapis.com/css?family=Noto+Serif:500,600,700"
+		"https://fonts.googleapis.com/css?family=Noto+Serif:500,600,700",
+		null
+	);
+}
+@include test(
+	"get-google-font() function",
+	"Return the import url to import fonts from Google with weights and text parameter"
+) {
+	@include is-equal(
+		get-google-font("Noto Serif", 500 600 700, $text: 'henrisStyle'),
+		"https://fonts.googleapis.com/css?family=Noto+Serif:500,600,700&text=henrisStyle",
+		null
 	);
 }
 
@@ -29,6 +40,3 @@
 ) {
 	@include is-equal(letter-spacing(-5), -0.005em);
 }
-
-// Test Mixins
-@import "mixins";
