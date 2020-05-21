@@ -16,8 +16,10 @@ $base-font-path: "" !default;
 	$display: "swap",
 	$italic: "Italic"
 ) {
-	$src: ();
-	$fileName: if($path, fs-join($path, $file), fs-join($file));
+  $src: ();
+  
+  $fileName: if($path, fs-join($path, $file), fs-join($file));
+  $fileName: str-remove-whitespace( #{$fileName} );
 
 	@if list-contains($files, "woff2") {
 		$value: "url('#{$fileName}.woff2') format('woff2')";
