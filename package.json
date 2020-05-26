@@ -43,6 +43,6 @@
 		"@henris/default": "0.0.2",
 		"@henris/grid": "0.0.14",
 		"@henris/output": "0.0.6",
-		"@henris/utils": "0.0.17"
+		"@henris/utils": "0.0.20"
 	}
 }
